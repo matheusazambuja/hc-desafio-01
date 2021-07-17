@@ -698,6 +698,14 @@ a {
   padding: 48px 48px;
 }
 
+.toast {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 24px 32px;
+}
+
 .relative {
   position: relative;
 }
@@ -810,13 +818,14 @@ a {
 }
 
 #home .container-item:nth-child(1) .title-timer .timer {
+  width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 18px;
   position: absolute;
-  -webkit-transform: translate(130%, -60%);
-          transform: translate(130%, -60%);
+  -webkit-transform: translate(290%, -60%);
+          transform: translate(290%, -60%);
 }
 
 #home .container-item:nth-child(1) .title-timer .timer span {

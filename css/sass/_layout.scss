@@ -5,6 +5,15 @@
   padding: 48px 48px;
 }
 
+.toast {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+
+  border-radius: 8px;
+  padding: 24px 32px;
+}
+
 .relative {
   position: relative;
 }
@@ -99,12 +108,14 @@
       margin-bottom: 16px;
 
       .timer {
+        width: 200px;
+
         display: flex;
         gap: 18px;
 
         position: absolute;
 
-        transform: translate(130%, -60%);
+        transform: translate(290%, -60%);
 
         span {
           font-family: Rubik, sans-serif;

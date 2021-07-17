@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Landing Page</title>
 
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet">
@@ -241,25 +243,25 @@
   <section class="container" id="home">
     <div class="container-item">
       <div class="title-timer">
-        <h1>Black Friday</h1>
+        <h1 class="mask">Black Friday</h1>
         <div class="timer">
           <div class="timer-element">
-            <p class="mask">10</p>
+            <p id="days" class="mask"></p>
             <p>Dias</p>
           </div>
           <span>:</span>
           <div class="timer-element">
-            <p class="mask">12</p>
+            <p id="hours" class="mask"></p>
             <p>Horas</p>
           </div>
           <span>:</span>
           <div class="timer-element">
-            <p class="mask">15</p>
+            <p id="minutes" class="mask"></p>
             <p>Minutos</p>
           </div>
           <span>:</span>
           <div class="timer-element">
-            <p class="mask">53</p>
+            <p id="seconds" class="mask"></p>
             <p>Segundos</p>
           </div>
         </div>
@@ -293,8 +295,8 @@
       </svg>
       <h3>Seja o primeiro a saber sobre nossa Black Friday</h3>
       <h4>Inscreva-se para receber ofertas econômicas e ideias únicas de compras</h4>
-      <form class="form-styled">
-        <input type="text" placeholder="Entre com seu e-mail">
+      <form class="form-styled" action="#" method="POST">
+        <input type="text" placeholder="Entre com seu e-mail" id="email-1">
         <button type="submit">Inscreva-se</button>
       </form>
     </div>
@@ -532,7 +534,7 @@
       <h2>Vai ficar de fora dessa?</h2>
       <h3>Receba notificações das promoções direto no seu e-mail</h3>
       <form class="form-styled">
-        <input type="text" placeholder="Entre com seu e-mail">
+        <input type="text" placeholder="Entre com seu e-mail" id="email-2">
         <button type="submit">Inscreva-se</button>
       </form>
     </div>
@@ -571,6 +573,10 @@
       </div>
     </div>
   </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  <script src="/js/script.js" type="text/javascript"></script>
 </body>
 
 </html>
