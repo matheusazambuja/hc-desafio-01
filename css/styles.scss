@@ -1,0 +1,25 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import 'sass/colors';
+@import 'sass/typography';
+@import 'sass/spacing';
+@import 'sass/layout';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+
+  background-color: $black-normal;
+}
+
+.border {
+  border: 1px solid red;
+}

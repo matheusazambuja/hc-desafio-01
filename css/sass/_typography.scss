@@ -1,0 +1,65 @@
+h1, h2, h3 {
+  color: $white-normal;
+  font-family: Rubik, sans-serif;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+h4, p, a, span {
+  color: $white-normal;
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 110%;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 120%;
+}
+
+h3 {
+  font-size: 36px;
+  line-height: 125%;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 140%;
+}
+
+p, a {
+  font-size: 18px;
+  line-height: 145%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mask {
+  background: linear-gradient(180deg, #F5F7F7 49.7%, rgba(245, 247, 247, 0) 176.33%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.highlighted {
+  color: $red-dark;
+}
