@@ -20,7 +20,79 @@ const updateCountdown = (timeUpdated) => {
   countdown.querySelector("#seconds").innerHTML = timeUpdated.seconds;
 };
 
+const startAnimation = () => {
+  let timeLineAnimation = gsap.timeline();
+
+  timeLineAnimation
+    .from(".timer", {
+      duration: 1,
+      y: -100,
+      opacity: 0,
+      delay: 0.2,
+      ease: "power3.out"
+    })
+    .from(".title-page", {
+      duration: 1,
+      y: 50,
+      opacity: 0,
+      ease: "power3.out"
+    }, "-=0.8")
+    .from(".sub-title-page", {
+      duration: 1,
+      y: 50,
+      opacity: 0,
+      ease: "power3.out"
+    }, "-=0.8")
+    .from(".svg-letter", {
+      duration: 1,
+      opacity: 0,
+      ease: "power3.out"
+    }, "-=0.8")
+    .from(".title-form", {
+      duration: 1,
+      y: 50,
+      opacity: 0,
+      ease: "power3.out"
+    }, "-=0.8")
+    .from(".sub-title-form", {
+      duration: 1,
+      y: 50,
+      opacity: 0,
+      ease: "power3.out"
+    }, "-=0.8")
+    .from(".form-styled", {
+      duration: 1,
+      opacity: 0,
+      ease: "power3.out"
+    })
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from("#section-01 .big-offer", {
+    duration: 1,
+    y: 300,
+    opacity: 0,
+    stagger: { each: 0.2 },
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#section-01"
+    }
+  });
+
+  gsap.from("#section-02", {
+    duration: 1,
+    y: 300,
+    opacity: 0,
+    stagger: { each: 0.2 },
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#section-02"
+    }
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
+
   setInterval(() => {
     const timeUpdated = countdownUpdated();
     updateCountdown(timeUpdated);
@@ -66,4 +138,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }).showToast();
     }
   });
+
+  startAnimation();
 });
