@@ -63,3 +63,49 @@ a {
 .highlighted {
   color: $red-dark;
 }
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 48px;
+    line-height: 120%;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 125%;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 140%;
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 145%;
+  }
+  p, a {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+@media screen and (max-width:900px) {
+  h1 {
+    font-size: 36px;
+    line-height: 125%;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 140%;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 145%;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 150%;
+  }
+  p, a {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
